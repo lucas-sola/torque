@@ -1,0 +1,21 @@
+{
+  "name": "sistema-oficina",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema de gerenciamento de uma oficina mecânica",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "gerar-script": "node gerar-script.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.0"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Oficina - Agendamentos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamentos</h1>
+    <nav><a href="main.html">Voltar</a></nav>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Serviço</th>
+          <th>Veículo</th>
+          <th>Cliente</th>
+          <th>Alterar data</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tabelaAgendamentos"></tbody>
+    </table>
+
+    <h2>Cadastrar agendamento</h2>
+    <form id="formAgendamento">
+      <select id="campoVeiculo" required>
+        <option value="">Selecione o veículo</option>
+      </select>
+      <input type="datetime-local" id="campoData" required />
+      <input type="text" id="campoServico" placeholder="Serviço" />
+      <button type="submit">Cadastrar</button>
+    </form>
+    <p id="mensagemErro" class="erro" role="alert"></p>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/agendamentos.js"></script>
+</body>
+</html>
